@@ -14,5 +14,8 @@ app.use(express.urlencoded({limit:"16kb"}))
 
 app.use(cookieParser())
 
+app.get('/',(req,res)=>{
+    res.send("Hello World")
+})
 
 export {app}
