@@ -11,3 +11,8 @@ app.use(cors({
 app.use(express.json({limit:"16kb"}))
 
 app.use(express.urlencoded({limit:"16kb"}))
+
+app.use(cookieParser())
+
+
+export {app}
