@@ -1,7 +1,7 @@
 const autocannon=require("autocannon");
 
 const url='http://localhost:8000';
-const duration = 30;
+const duration = 60;
 
 const instance=autocannon({
     url,
@@ -10,7 +10,8 @@ const instance=autocannon({
     if(err){
         console.log("Error", err);
     } else{
-        console.log("Result:", result)
+        console.log("Number of requests:", result.requests.total);
+        console.log("Duration (seconds):", result.duration)
     }
 })
 
