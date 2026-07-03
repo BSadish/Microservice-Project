@@ -1,6 +1,6 @@
-import {asyncHandler} from "../util/asyncHandler"
-import {ApiError} from "../util/ApiError"
-import { User } from "../../../KeepShare API/src/models/user.model"
+import {asyncHandler} from "../util/asyncHandler.js"
+import {ApiError} from "../util/ApiError.js"
+
 
 
 export const verifyJWT=asyncHandler(async(req,res,next)=>{
