@@ -15,16 +15,11 @@ app.use(express.urlencoded({limit:"16kb"}))
 app.use(cookieParser())
 
 app.get('/',(req,res)=>{
-    for(let i=0;i<10000000;i++){
+    for(let i=0;i<1000000000;i++){
 
     }
     res.send("Hello World")
 })
-app.get('/test',(req,res)=>{
-    for(let i=0;i<10000000;i++){
 
-    }
-    res.send("Hello World")
-})
 
 export {app}
