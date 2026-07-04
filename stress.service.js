@@ -13,5 +13,5 @@ app.get('/',(req,res)=>{
 })
 
 app.listen(process.env.PORT || 8080, ()=>{
-    "Server is running on PORT", process.env.PORT || 8080
+    "Server is running on PORT", process.env.PORT 
 })
