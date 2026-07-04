@@ -1,7 +1,7 @@
 const autocannon = require("autocannon");
 
 const url = 'http://localhost:8080';
-const duration = 5;
+const duration = 30;
 
 const instance = autocannon({
     url,

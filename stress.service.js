@@ -12,6 +12,6 @@ app.get('/',(req,res)=>{
     res.send("Hello World")
 })
 
-app.listen(process.env.PORT || 8080, ()=>{
-    "Server is running on PORT", process.env.PORT 
+app.listen(8000, ()=>{
+    "Server is running on PORT 8000" 
 })
